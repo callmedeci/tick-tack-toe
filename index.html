@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tick Tack Toe</title>
+  <link rel="stylesheet" href="resources/css/app.css">
+</head>
+
+<body class="flex flex-col items-center justify-center w-full h-screen bg-zinc-900">
+
+
+  <div class="w-full h-2 absolute bg-zinc-600/30 bottom-96">
+  </div>
+
+  <h1 class="text-zinc-50 sm:text-6xl text-3xl font-semibold">
+    <span class="text-rose-500">T</span><span class="text-amber-300">i</span><span class="text-green-300">c</span><span
+      class="text-indigo-500">k</span><span class="text-teal-400"> T</span><span class="text-purple-500">a</span><span
+      class="text-pink-500">c</span><span class="text-lime-400">k</span><span class="text-cyan-400"> T</span><span
+      class="text-orange-400">o</span><span class="text-yellow-300">e</span>
+  </h1>
+
+  <div
+    class="my-10 w-96 flex flex-row-reverse items-center justify-between text-lg text-zinc-100 font-mono bg-zinc-600/30 rounded-lg p-3">
+    <p>
+      ⭕ Score : <span id="plr-two-score">0</span>
+    </p>
+    <p>
+      🔹 Score : <span id="plr-one-score">0</span>
+    </p>
+  </div>
+
+
+  <h2 id="status" class="mb-4 text-zinc-50 text-3xl font-semibold">
+    Blue Turn 🔹
+  </h2>
+
+  <section class="w-96 h-96 bg-zinc-800 rounded-lg grid grid-cols-3 gap-2 p-2 relative overflow-hidden">
+
+    <div data-col="1x1"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="1x2"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="1x3"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="2x1"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="2x2"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="2x3"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="3x1"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="3x2"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <div data-col="3x3"
+      class="col-span-1 bg-zinc-100 rounded hover:bg-zinc-100/90 transition-all duration-150 cube cursor-pointer">
+    </div>
+
+    <section id="stop-game"
+      class="w-96 h-96 bg-zinc-800/50 absolute rounded-lg transition-all duration-500 translate-y-96">
+    </section>
+
+  </section>
+
+
+  <button id="btn-reset"
+    class="mt-8 w-96 rounded-lg px-3 py-2 bg-rose-600 text-zinc-100 font-semibold hover:bg-rose-600/70 transition-all duration-700">
+    Reset The game
+  </button>
+
+
+
+
+
+
+  <script src="resources/js/app.js"></script>
+</body>
+
+</html>
